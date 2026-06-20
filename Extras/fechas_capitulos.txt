@@ -1,0 +1,35 @@
+LISTADO DE FECHAS DE CREACIÓN DE CAPÍTULOS
+==================================================
+
+Capítulo 001: 25/Oct/2025
+Capítulo 002: 27/Oct/2025
+Capítulo 003: 28/Oct/2025
+Capítulo 004: 30/Oct/2025
+Capítulo 005: 04/Nov/2025
+Capítulo 006: 05/Nov/2025
+Capítulo 007: 09/Nov/2025
+Capítulo 008: 11/Nov/2025
+Capítulo 009: 11/Nov/2025
+Capítulo 010: 14/Nov/2025
+Capítulo 011: 19/Nov/2025
+Capítulo 012: 23/Nov/2025
+Capítulo 013: 30/Nov/2025
+Capítulo 014: 02/Dec/2025
+Capítulo 015: 07/Dec/2025
+Capítulo 016: 11/Dec/2025
+Capítulo 017: 19/Dec/2025
+Capítulo 018: 08/Jan/2026
+Capítulo 019: 18/Jan/2026
+Capítulo 020: 31/Jan/2026
+Capítulo 021: 31/Jan/2026
+Capítulo 022: 11/Feb/2026
+Capítulo 023: 19/Feb/2026
+Capítulo 024: 27/Feb/2026
+Capítulo 025: 02/Mar/2026
+Capítulo 026: 08/Mar/2026
+Capítulo 027: 09/Mar/2026
+Capítulo 028: 21/Mar/2026
+Capítulo 029: 29/Mar/2026
+Capítulo 030: 12/Apr/2026
+Capítulo 031: 07/May/2026
+Capítulo 032: 20/Jun/2026
