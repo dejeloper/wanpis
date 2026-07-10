@@ -1,0 +1,83 @@
+La aplicación Muwi
+
+Muwi es el núcleo tecnológico de la travesía. No funciona únicamente como una herramienta de seguimiento, sino como el único medio oficial para interactuar con el viaje. Todas las pistas, registros y comunicaciones pasan exclusivamente por la aplicación, convirtiéndola en el vínculo entre los participantes y la organización.
+La aplicación se instala automáticamente al escanear el primer código QR en el punto de partida. En pantalla aparece el mensaje "Creando llave virtual..." antes de completar la descarga. A partir de ese momento, el acceso a sus distintas funciones se habilita conforme el viajero avanza.
+
+Registro inicial
+
+Al instalar la aplicación, el participante debe completar un formulario con los siguientes campos: nombre, número de pasaporte, fecha de nacimiento, género, apodo, país de origen y correo electrónico.
+Una vez enviado el formulario, la app muestra en tiempo real la posición global del participante: "Eres el número [X] en inscribirte." El contador sigue aumentando a medida que otros viajeros completan su registro.
+
+Funciones principales
+
+Registro y validación de pistas
+Cada código QR entregado por un distribuidor debe escanearse desde la aplicación. Para completar el escaneo el dispositivo requiere conexión a internet; en caso de no tener datos móviles, el distribuidor puede facilitar las credenciales de una red Wi-Fi. Una vez procesado el escaneo, aparece confeti digital junto al número de posición global del participante para esa pista: "Participante número [X]." Solo así queda registrado oficialmente el paso del viajero por esa ubicación y se habilita el acceso a la siguiente etapa.
+Cada pista tiene un nivel de dificultad interna asignado por la organización, aunque ese valor no se muestra directamente al participante.
+
+Red social exclusiva
+Los viajeros activos pueden publicar fotografías, estados y actualizaciones de su recorrido. El contenido solo es visible para quienes continúan en la travesía. Los participantes descalificados conservan acceso únicamente a su historial personal.
+Al revelarse una nueva pista, la app envía una notificación push acompañada de un destello azul en pantalla.
+
+Mensajería interna
+Los participantes pueden enviarse mensajes directos dentro de la aplicación independientemente de si existe una relación de nakamas entre ellos. El sistema nakama amplía la información compartida, pero la mensajería básica está disponible con cualquier viajero activo.
+
+Bitácora de viaje
+Cada usuario dispone de un diario privado donde puede documentar experiencias, reflexiones, fotografías y recuerdos de cada destino. Algunas entradas pueden compartirse con otros viajeros si el usuario así lo decide. 
+
+Foros
+La aplicación incluye espacios de discusión dedicados a teorías sobre el manga, interpretaciones de los poemas, análisis del capítulo secreto y temas relacionados con la logística del viaje. También es posible crear entradas de tipo blog, aunque no pueden monetizarse. Los hilos más valorados por la comunidad quedan marcados como favoritos.
+
+Sistema de Nakamas
+
+Los participantes pueden vincular oficialmente a otros viajeros como nakamas escaneando el QR del perfil del otro participante desde la app. La pantalla solicita confirmación: "¿Desea vincular a [nombre] como nakama?" Tras aceptar, aparece una animación de confeti digital y la app envía una notificación con las condiciones de la alianza: compartir pistas, información y mensajes; advertencia de que cada participante debe continuar su propio camino; y la posibilidad de sincronizar destinos si ambos lo permiten.
+Esta relación concede acceso a funciones adicionales: ubicación aproximada, ruta recorrida y progreso detallado de cada compañero, información que permanece oculta para el resto de usuarios.
+Cuando un nakama avanza más rápido que el otro, la app ofrece la opción de pausar su progreso para esperar al compañero y desbloquear la siguiente pista juntos una vez que ambos hayan llegado al mismo punto.
+
+Mapa del recorrido
+El mapa registra todas las ciudades visitadas y construye automáticamente la ruta personal de cada participante a medida que avanza, incluyendo los desplazamientos fuera del recorrido oficial. Es solo informativo y no afecta el progreso en la travesía. En la sección de nakamas, cada usuario puede ver el mapa interactivo de su compañero con toda su trazabilidad y la etapa en que se encuentra.
+
+Estadísticas
+La aplicación muestra información individual como tiempo de viaje, distancia recorrida, países visitados y pistas resueltas.
+También ofrece estadísticas globales indicando cuántos viajeros han completado cada etapa y qué porcentaje representan respecto al número inicial de participantes. El sistema de habilitados distingue entre los participantes registrados totales y aquellos que cumplen los requisitos para acceder a cada pista concreta; este subconjunto decrece con cada etapa.
+
+Archivo de pistas
+Todas las pistas resueltas permanecen disponibles para su consulta. Además del poema correspondiente, cada una incluye notas y referencias que ayudan a comprender el patrón oculto del recorrido. Algunas líneas de las pistas pueden quedar sin explicación de forma intencionada.
+
+Sincronización del viaje
+
+Aunque cada participante avanza a un ritmo diferente, el progreso está regulado por un sistema de sincronización global inspirado en el funcionamiento del Log Pose.
+
+Rutas diferenciadas
+Los participantes no comparten necesariamente el mismo destino para cada pista. Las rutas varían según el pasaporte, la nacionalidad y la disponibilidad de visas de cada viajero.
+
+Activación de una etapa
+La primera vez que un viajero descubre una nueva pista, esa etapa queda activada para todos los participantes habilitados. Desde ese instante comienza un contador global que determina cuánto tiempo permanecerá disponible.
+
+Ventana de validación
+Cada etapa puede completarse únicamente durante un periodo limitado. Los viajeros que no alcancen a validar la pista antes del cierre pierden la posibilidad de continuar la travesía.
+
+Sincronización del Log Pose
+Tras registrar una pista, la aplicación inicia un periodo obligatorio de espera. Durante ese tiempo no existe forma de acceder a la siguiente ubicación, independientemente de la velocidad del participante.
+La organización sostiene que este proceso permite que el recorrido permanezca sincronizado para todos los viajeros.
+
+Liberación de la siguiente pista
+Cuando finaliza el tiempo de sincronización, la aplicación envía simultáneamente una notificación a todos los participantes que completaron la etapa anterior. Solo entonces se revela el siguiente poema o destino.
+
+Duración del recorrido
+La sucesión de etapas activas y periodos de espera está diseñada para que la travesía completa tenga una duración aproximada de seis meses, independientemente de las diferencias de ritmo entre los participantes.
+
+Premio
+El objetivo de completar la travesía es obtener acceso anticipado al capítulo secreto: los participantes que terminen el recorrido podrán leerlo un mes antes de su publicación oficial. La organización advierte que el viaje puede concluir sin un ganador único si ningún participante completa todas las etapas dentro del tiempo establecido.
+
+Seguridad
+
+Para preservar el secreto del viaje, la aplicación incorpora varias restricciones.
+
+- Solo puede utilizarse desde teléfonos inteligentes o tabletas autorizadas.
+- Toda la información permanece cifrada y vinculada a la identidad del participante mediante tecnología blockchain.
+- La app impide técnicamente realizar capturas de pantalla, copiar texto o guardar imágenes del contenido interno.
+- La difusión de contenido interno fuera de la aplicación constituye una infracción grave y puede implicar la descalificación inmediata, incluso si el contenido se elimina con posterioridad.
+- La aceptación del reglamento crea un contrato electrónico entre el participante, su dispositivo, la aplicación y la organización, permitiendo verificar la autenticidad de cada registro y dificultando intentos de fraude o suplantación.
+
+Distribuidores
+Cada distribuidor conoce únicamente la pista y la ubicación que le corresponde, lo que hace inviable sobornarlo para obtener información de otras etapas. Sus únicas atribuciones son entregar el código QR al participante y, en caso necesario, bloquearlo. Tienen prohibido establecer relaciones personales con los viajeros o compartir datos de contacto propios.
