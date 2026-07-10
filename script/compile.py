@@ -102,7 +102,7 @@ def compile_chapters():
         # Agregar título al inicio
         title = f"{PROJECT_NAME} {start_num}-{end_num}"
         content.append(title)
-        content.append('\n\n--\n\n')
+        content.append('\n\n-\n')
 
         for idx, chapter_file in enumerate(batch):
             with open(chapter_file, 'r', encoding='utf-8') as f:
@@ -110,7 +110,7 @@ def compile_chapters():
                 content.append(chapter_content)
                 # Separador entre capítulos (excepto al final)
                 if idx < len(batch) - 1:
-                    content.append('\n--\n')
+                    content.append('\n\n-\n')
 
         # Guardar archivo compilado
         with open(output_path, 'w', encoding='utf-8') as f:
