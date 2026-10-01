@@ -44,25 +44,46 @@ def clean_output_dir(output_dir):
             file.unlink()
         print(f"[CLEAN] Carpeta limpiada\n")
 
+def read_existing_dates(dates_file):
+    """Lee las fechas ya registradas: {número de capítulo: fecha}"""
+    dates = {}
+    if not dates_file.exists():
+        return dates
+
+    with open(dates_file, 'r', encoding='utf-8') as f:
+        for line in f:
+            match = re.match(r'Capítulo (\d+): (.+)', line.strip())
+            if match:
+                dates[int(match.group(1))] = match.group(2)
+    return dates
+
 def generate_dates_file(chapters, output_dir):
     """Genera un archivo con las fechas de creación de los capítulos"""
     extras_dir = Path(__file__).parent.parent / 'Extras'
     extras_dir.mkdir(parents=True, exist_ok=True)
     dates_file = extras_dir / 'fechas_capitulos.txt'
 
+    # Conservar las fechas ya registradas; solo se toca el último capítulo
+    dates = read_existing_dates(dates_file)
+    last_chapter = chapters[-1]
+    last_num = extract_chapter_number(last_chapter.name)
+
+    for chapter_file in chapters:
+        chapter_num = extract_chapter_number(chapter_file.name)
+        if chapter_num in dates and chapter_file != last_chapter:
+            continue
+        # Obtener fecha de creación (st_ctime en Windows, en otros OS puede variar)
+        creation_time = datetime.fromtimestamp(chapter_file.stat().st_ctime)
+        dates[chapter_num] = creation_time.strftime("%d/%b/%Y")
+
     with open(dates_file, 'w', encoding='utf-8') as f:
         f.write("LISTADO DE FECHAS DE CREACIÓN DE CAPÍTULOS\n")
         f.write("=" * 50 + "\n\n")
 
-        for chapter_file in chapters:
-            # Obtener fecha de creación (st_ctime en Windows, en otros OS puede variar)
-            creation_time = datetime.fromtimestamp(chapter_file.stat().st_ctime)
-            chapter_num = extract_chapter_number(chapter_file.name)
-            date_str = creation_time.strftime("%d/%b/%Y")
+        for chapter_num in sorted(dates):
+            f.write(f"Capítulo {chapter_num:03d}: {dates[chapter_num]}\n")
 
-            f.write(f"Capítulo {chapter_num:03d}: {date_str}\n")
-
-    print(f"[DATES] Listado de fechas generado: fechas_capitulos.txt\n")
+    print(f"[DATES] Fecha actualizada solo para el capítulo {last_num:03d}: fechas_capitulos.txt\n")
 
 def compile_chapters():
     """Compila los capítulos en lotes"""
